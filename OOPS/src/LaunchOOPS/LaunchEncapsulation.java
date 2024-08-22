@@ -10,7 +10,7 @@ class Book{
 		if(pageNo>=0) {
 			this.pageNo = pageNo;
 		}else {
-			System.out.println("Invalid page no, it should be greater than 0");
+			System.out.println("Invalid page no, it can not be negative");
 		}
 		
 	}
