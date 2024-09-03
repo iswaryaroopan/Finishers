@@ -16,6 +16,9 @@ class Dog1 extends Animal1{
 	public void running() {
 		System.out.println("Dog is Running");
 	}
+	public void sleeping() {
+		System.out.println("Dog is sleeping");
+	}
 }
 
 class Tiger1 extends Animal1{
@@ -31,6 +34,10 @@ class RealTimePloyMorphism{
 	public void permit(Animal1 animal) {
 		animal.eat();
 		animal.running();
+		if (animal instanceof Dog1) {
+		        ((Dog1) animal).sleeping();
+		}
+		
 	}
 }
 
